@@ -1,3 +1,82 @@
 // Place all the styles related to the AutoCar controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body,html{
+  width:100%;
+  height:100%;
+}
+body{
+  background: image-url('bg.png') ,left top no-repeat;
+  background-size:100%;
+}
+*{
+  margin:0;
+  padding:0;
+}
+.clearfix:after{
+  content:"";
+  height:0;
+  visibility:hidden;
+  display:block;
+  clear:both;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+a{
+  display:block;
+  width:69px;
+  height:71px;
+}
+div.box{
+  margin-top:-50%;
+  position:absolute;
+  top:50%;
+  width:100%;
+}
+a.up{
+  background:image-url('up.png'), left top no-repeat;
+}
+a.down{
+  background:image-url('down.png') ,left top no-repeat;
+}
+a.left{
+  background:image-url('left.png'), left top no-repeat;
+}
+a.right{
+  background:image-url('right.png'), left top no-repeat;
+}
+a.play{
+  background:image-url('play.png'), left top no-repeat;
+}
+a.stop{
+  background:image-url('stop.png'), left top no-repeat;
+}
+a.plus{
+  background:image-url('plus.png'), left top no-repeat;
+}
+div.up a,div.down a,div.middle{
+  margin:0 auto;
+}
+div.middle{
+  width:237px;
+}
+div.up{
+  margin-bottom:15px;
+}
+div.down{
+  margin-top:15px;
+}
+div.middle-a{
+  margin:0 15px;
+}
+a.play{
+  margin-right:20px;
+}
+div.box-bottom{
+  width:158px;
+  margin: 50px auto;
+}
