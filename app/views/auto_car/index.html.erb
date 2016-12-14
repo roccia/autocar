@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Car</title>
+    <style>
+        body,html{
+            width:100%;
+            height:100%;
+        }
+        body{
+            background:url('images/bg.png') left top no-repeat;
+            background-size:100%;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        .clearfix:after{
+            content:"";
+            height:0;
+            visibility:hidden;
+            display:block;
+            clear:both;
+        }
+        .fl{
+            float:left;
+        }
+        .fr{
+            float:right;
+        }
+        a{
+            display:block;
+            width:69px;
+            height:71px;
+        }
+        div.box{
+            margin-top:-50%;
+            position:absolute;
+            top:50%;
+            width:100%;
+        }
+        a.up{
+            background:url('images/up.png') left top no-repeat;
+        }
+        a.down{
+            background:url('images/down.png') left top no-repeat;
+        }
+        a.left{
+            background:url('images/left.png') left top no-repeat;
+        }
+        a.right{
+            background:url('images/right.png') left top no-repeat;
+        }
+        a.play{
+            background:url('images/play.png') left top no-repeat;
+        }
+        a.stop{
+            background:url('images/stop.png') left top no-repeat;
+        }
+        a.plus{
+            background:url('images/plus.png') left top no-repeat;
+        }
+        div.up a,div.down a,div.middle{
+            margin:0 auto;
+        }
+        div.middle{
+            width:237px;
+        }
+        div.up{
+            margin-bottom:15px;
+        }
+        div.down{
+            margin-top:15px;
+        }
+        div.middle-a{
+            margin:0 15px;
+        }
+        a.play{
+            margin-right:20px;
+        }
+        div.box-bottom{
+            width:158px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box-up">
+        <div class="up">
+            <a href="" class="up"></a>
+        </div>
+        <div class="middle clearfix">
+            <div class="fl left-a">
+                <a href="" class="left"></a>
+            </div>
+            <div class="fl middle-a">
+                <a href="" class="plus"></a>
+            </div>
+            <div class="fl right-a">
+                <a href="" class="right"></a>
+            </div>
+        </div>
+        <div class="down">
+            <a href="" class="down"></a>
+        </div>
+    </div>
+    <div class="box-bottom clearfix">
+        <a href="" class="play fl"></a>
+        <a href="" class="stop fl"></a>
+    </div>
+</div>
+
+
+</body>
+</html>
+
