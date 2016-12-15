@@ -1,29 +1,56 @@
 <div class="box">
-    <div class="box-up">
-        <div class="up">
-
-          <%= button_to "up", { :controller => 'auto_car', :action => 'move'}, class: 'up' %>
-
-        </div>
-        <div class="middle clearfix">
-            <div class="fl left-a">
-                <a href="" class="left"></a>
-            </div>
-            <div class="fl middle-a">
-                <a href="" class="plus"></a>
-            </div>
-            <div class="fl right-a">
-                <a href="" class="right"></a>
-            </div>
-        </div>
-        <div class="down">
-            <a href="" class="down"></a>
-        </div>
+  <div class="box-up">
+    <div class="up">
+      <button class="up"></button>
     </div>
-    <div class="box-bottom clearfix">
-        <a href="" class="play fl"></a>
-        <a href="" class="stop fl"></a>
+    <div class="middle clearfix">
+      <div class="fl left-a">
+        <button class="left"></button>
+      </div>
+      <div class="fl middle-a">
+        <button class="plus"></button>
+      </div>
+      <div class="fl right-a">
+        <button class="right"></button>
+      </div>
     </div>
+    <div class="down">
+      <button class="down"></button>
+    </div>
+  </div>
 </div>
+<script>
+  $(function() {
+    var up = $('.up'),
+        plus = $('.plus'),
+        down = $('.down'),
+        left = $('.left'),
+        right = $('.right');
+    function controller(url) {
+      $.ajax({
+        type: 'get',
+        url: url,
+        success: function() {
 
+        },
+        error: function() {
+          alert("error!");
+        }
+      })
+    }
+    function handleEvent(els,urls,stop_url) {
+      [].map.call(els, function(item, index) {
+        item.on('mousedown', function() {
+          controller(urls[index])
+          return false;
+        }).on('mouseup', function() {
+          controller(stop_url);
+          return false;
+        })
+      })
+    }
+    handleEvent([up,down,left, right,plus],["up","down","left","right","plus",],"stop")
 
+  })
+</script>
+</body>
