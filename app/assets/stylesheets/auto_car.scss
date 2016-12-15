@@ -12,7 +12,18 @@ body{
 *{
   margin:0;
   padding:0;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
+
+button:focus{
+  outline:none;
+}
+
 .clearfix:after{
   content:"";
   height:0;
@@ -26,10 +37,11 @@ body{
 .fr{
   float:right;
 }
-a{
+button{
   display:block;
   width:69px;
   height:71px;
+  border:none;
 }
 div.box{
   margin-top:-50%;
@@ -58,7 +70,7 @@ a.stop{
 a.plus{
   background:image-url('plus.png'), left top no-repeat;
 }
-div.up a,div.down a,div.middle{
+div.up button,div.down button,div.middle{
   margin:0 auto;
 }
 div.middle{
