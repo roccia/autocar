@@ -49,25 +49,25 @@ div.box{
   top:50%;
   width:100%;
 }
-a.up{
+button.up{
   background:image-url('up.png'), left top no-repeat;
 }
-a.down{
+button.down{
   background:image-url('down.png') ,left top no-repeat;
 }
-a.left{
+button.left{
   background:image-url('left.png'), left top no-repeat;
 }
-a.right{
+button.right{
   background:image-url('right.png'), left top no-repeat;
 }
-a.play{
+button.play{
   background:image-url('play.png'), left top no-repeat;
 }
-a.stop{
+button.stop{
   background:image-url('stop.png'), left top no-repeat;
 }
-a.plus{
+button.plus{
   background:image-url('plus.png'), left top no-repeat;
 }
 div.up button,div.down button,div.middle{
