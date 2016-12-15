@@ -84,7 +84,6 @@ def self.move_forward
   front_left_forward
   back_left_forward
   back_right_forward
-  sleep 5
 end
 
 def self.move_backward
@@ -99,8 +98,8 @@ def self.turn_left
   back_right_forward
   @f_l_f.off
   @b_l_f.off
-  @r_pwm_b.vaule = 1
-  @r_pwm_a.vaule = 1
+  @r_pwm_b.value = 1
+  @r_pwm_a.value = 1
   @r_pwm_b.on
   @r_pwm_a.on
 end
@@ -110,8 +109,8 @@ def self.turn_right
   back_left_forward
   @f_r_f.off
   @b_r_f.off
-  @l_pwm_b.vaule = 1
-  @l_pwm_a.vaule = 1
+  @l_pwm_b.value = 1
+  @l_pwm_a.value = 1
   @l_pwm_b.on
   @l_pwm_a.on
 end
@@ -119,7 +118,7 @@ end
 def self.speed_up
   move_forward
   @pwm.each{|p|
-    p.vaule = 1
+    p.value = 1
     p.on
   }
 end
